@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>scatter plot example</title>
+        <!-- D3 version5 mini -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    <body>
+        <h1>D3 scatter plot example</h1>
+        <!-- <svg id="plot" width="600" height="400"></svg> -->
+        
+        <script>
+            "use strict";
+            let arr1 = [1,3,2];
+            // d3.select("body").selectAll("p")
+            //   .data(array)
+            //   .enter().append("p")
+            //     .text("hi sella!");
+
+            function render(data) {
+                //Bind & Enter
+                // var ps = d3.select("#pgroup").selectAll("p")
+                //     .data(arr1)
+                //     .enter().append("p")
+                //     .text(function(d) {
+                //         return "Number " + d + "!";
+                //     })
+                //     .style("color", "blue")
+                //     .style("font-size", "1em");
+                
+                
+                //Exit
+                ps.exit().remove();
+            }
+
+            function update() {
+                //
+            }
+
+        </script>
+
+    </body>
+</html>
